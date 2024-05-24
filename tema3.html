@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesare Imagine</title>
+    <style>
+        canvas {
+            margin: 5px;
+            border: 1px solid #cf6198;
+        }
+        button {
+        background-color: #cf6198;
+        color: white ;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: lightpink; 
+    }
+    h2 {
+        background-color: #cf6198;
+        color: white;
+        padding: 10px;
+        border-radius: 5px; 
+    }
+
+    p {
+        background-color: lightpink;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Aplicatie JavaScript care sa realizeze o procesare de imagini</h1>
+    <button onclick="processImage()">Process Image</button>
+    <div>
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <canvas id="mirrorCanvas" width="300" height="300"></canvas>
+        <canvas id="edgeDetectionCanvas" width="300" height="300"></canvas>
+    </div>
+    <script src="index.js"></script>
+    <h2>Descrierea aplicatiei</h2>
+            <p>Acest script JavaScript utilizează API-ul https://dog.ceo/api/breeds/image/random pentru a obține o imagine aleatorie cu câini și o afișează pe un element canvas într-un document HTML. 
+                După afișarea imaginii, scriptul continuă prin aplicarea unor transformări, inclusiv afișarea imaginii în oglindă și aplicarea unui algoritm simplu de edge detection (pentru a evidenția marginile imaginii) și afișează rezultatele filtrării pe canvas,
+                 cu o întârziere de 1 secundă între fiecare etapă.</p>
+</body>
+</html>
